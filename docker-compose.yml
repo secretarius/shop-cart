@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "4201:4201"
+    container_name: realworld-docker-front-end
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    volumes: 
+      - ./frontend/src:/usr/src/app/src

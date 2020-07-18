@@ -1,0 +1,29 @@
+<div class="card card-info">
+  <div class="card-header bg-info">
+    {{ pageTitle }}
+  </div>
+  <div class="card card-body">
+    <div class="table-responsive">
+      <table class="table" >
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Label</th>
+            <th>Price</th>
+            <th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.label }}</td>
+            <td>{{product.price}}</td>
+            <td><button class="btn btn-info" (click)="buyProd(product)"  [value]="product.name">
+              Buy
+            </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
