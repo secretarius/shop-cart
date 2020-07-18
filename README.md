@@ -5,7 +5,7 @@ The following are detailed instructions for installing the code
 
 1. Download or clone the code from this repository. 
 If you download as a zip file, be sure to unzip it.
-2. Navigate to the shop-master folder. 
+2. Navigate to the shop-cart-master folder. 
 There should be a docker-compose.yml file in this folder. 
 3. In a command window (or the Command prompt in VS Code), type docker-compose up --build 
 This creates a container and installs all packages from the package.json file into that container. You may see a few warnings during this process, but you should not see any errors.
